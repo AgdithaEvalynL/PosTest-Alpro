@@ -1,0 +1,28 @@
+milih="y"
+while milih=="y":
+    print ('------------------------')
+    print ('Mengkonversi suhu')
+    print ('========================')
+    print ('1.Fahrenheit to celcius')
+    print ('2.Kelvin to celcius')
+    print ('3.Reamur to celcius')
+    print ("=======================")
+
+    #Memilih suhu yang dihitung 
+    pilihan = int(input('rumus yang mau dihitung = '))
+
+    if pilihan == 1 :
+        Fah = int(input("Masukkan Suhu Fahrenheit= " ))
+        cel =(Fah-32)*5/9
+        print ("fahrenheit to celcius= " , cel,'C' )
+    elif pilihan == 2 :
+        Kel= int(input("Masukkan suhu kelvin = "))
+        Celcius=(Kel-273)
+        print ("kelvin to celcius= ", Celcius,'C' )
+    elif pilihan == 3 :
+        Reamur = int(input("Masukkan suhu Reamur = "))
+        celcius=(5/4)*Reamur
+        print ("kelvin to celcius= ", celcius,'C' )
+    milih=input("apakah anda ingin menghitung kembali y/n =")
+if milih=="n" :
+    print("stop")
