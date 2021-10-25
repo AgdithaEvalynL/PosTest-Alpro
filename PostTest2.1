@@ -1,0 +1,17 @@
+#Data Mahasiswa 
+milih="y"
+while milih=="y":
+
+    Nama= input("Masukan Nama:")
+    Kelas= input("Masukkan kelas:")
+    Nim= input('Masukkan NIM:')
+    Jurusan = input('Masukkan Jurusan:')
+    TB= float(input('Masukkan Tinggi Badan:'))
+    BB= int(input('Masukkan Berat Badan:'))
+
+    list=[Nama,Kelas,Nim,Jurusan,TB,BB]
+    print(list)
+    print('=======================================')
+    milih=input("apakah anda ingin mengisi kembali y/n =")
+if milih=='n' :
+    print("stop")
